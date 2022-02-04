@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('ログイン成功') }}
+                    <a href="./main">飛ぶ
                 </div>
             </div>
         </div>
