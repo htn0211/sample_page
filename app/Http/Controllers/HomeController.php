@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -40,7 +41,7 @@ class HomeController extends Controller
             'inquiry' => $request->inquiry
         ];
         var_dump($param);
-        DB::insert('insert into reviews (name,name_kana,birthday,tel,inquiry) values (:name, :name_kana,:birthday,:tel,:inquiry,NOW())', $param);
+        DB::insert('insert into reviews (name,name_kana,birthday,tel,inquiry,time) values (:name, :name_kana,:birthday,:tel,:inquiry,NOW())', $param);
         
         return redirect('/');
     }

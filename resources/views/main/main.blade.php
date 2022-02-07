@@ -42,7 +42,7 @@
             <label for="name">名前</label>
             <input type="text" name="name">
             <label for="name_kana">名前（カナ）</label>
-            <input type="text" name="name">
+            <input type="text" name="name_kana">
             <label for="birthday">誕生日</label>
             <input type="text" name="birthday">
             <label for="tel">電話番号</label>
